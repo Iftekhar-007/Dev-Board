@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Board</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/86ac6ed96e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="bg-[#F4F7FF]">
+    <header class="pt-6">
+      <section
+        class="w-[1440px] mx-auto shadow p-5 bg-white rounded-2xl flex justify-between items-center"
+      >
+        <div class="logo flex justify-start items-center gap-3">
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="font-[poppins] text-[2.25rem]">
+            Dev<span class="font-bold">Board</span>
+          </h1>
+        </div>
+
+        <div class="right-items flex justify-end items-center gap-4">
+          <div>
+            <img
+              class="w-full bg-[#F4F7FF] p-5 rounded-2xl"
+              src="./assets/checkbox.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="bg-[#F4F7FF] p-5 rounded-full"
+              src="./assets/theme-btn.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="grid grid-cols-4 gap-5 w-[1440px] mx-auto pt-5 pb-16">
+      <section class="col-span-3 p-5 bg-white rounded-2xl">
+        <section>
+          <div
+            class="intro-card grid grid-cols-4 gap-5 border-b border-dotted border-gray-400 pb-5"
+          >
+            <div
+              class="cards bg-[#F4F7FF] rounded-2xl p-5 flex justify-start items-center gap-4"
+            >
+              <div class="bg-white p-5 rounded-full">
+                <img src="./assets/checkbox.png" alt="" />
+              </div>
+              <div>
+                <p class="font-[poppins] font-medium text-base">
+                  Task Assigned
+                </p>
+                <p class="font-bold font-[poppins] text-3xl">06</p>
+              </div>
+            </div>
+            <div
+              class="cards bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-start items-center p-5 rounded-2xl gap-5 col-span-2"
+            >
+              <div>
+                <img src="./assets/board.png" alt="" />
+              </div>
+              <div>
+                <h1 class="text-white font-[poppins] font-medium text-[1.5rem]">
+                  Discover Something <br />
+                  New Today!
+                </h1>
+              </div>
+            </div>
+            <div
+              class="cards bg-[#F4F7FF] p-5 flex justify-start items-center gap-4 rounded-2xl"
+            >
+              <div class="bg-white p-5 rounded-full">
+                <img src="./assets/calender.png" alt="" />
+              </div>
+              <div>
+                <p class="font-[poppins] font-medium text-base">Wed,</p>
+                <p class="font-medium font-[poppins] text-lg">July 08 2025</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="pt-5">
+          <div class="assignment-cards grid grid-cols-3 gap-5">
+            <div class="assign-card bg-[#F4F7FF] p-5 rounded-2xl">
+              <div
+                class="button btn hover:bg-white bg-white border-none rounded-2xl hover:shadow-none font-[poppins] text-sm font-light"
+              >
+                ShopEase
+              </div>
+              <h2 class="my-4 text-xl font-medium font-[poppins]">
+                Fixed Mobile Button Issue
+              </h2>
+              <p
+                class="bg-white p-5 rounded-2xl text-sm font-normal font-[poppins]"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure......
+              </p>
+              <hr class="my-5 text-gray-300" />
+              <div class="flex justify-between items-center">
+                <p>
+                  Deadline: <br />
+                  21 February 2025
+                </p>
+                <button class="btn btn-primary shadow-none">Completed</button>
+              </div>
+            </div>
+
+            <div class="assign-card bg-[#F4F7FF] p-5 rounded-2xl">
+              <div
+                class="button btn hover:bg-white bg-white border-none rounded-2xl hover:shadow-none font-[poppins] text-sm font-light"
+              >
+                CloudSync
+              </div>
+              <h2 class="my-4 text-xl font-medium font-[poppins]">
+                Fixed Mobile Button Issue
+              </h2>
+              <p
+                class="bg-white p-5 rounded-2xl text-sm font-normal font-[poppins]"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure ........
+              </p>
+              <hr class="my-5 text-gray-300" />
+              <div class="flex justify-between items-center">
+                <p>
+                  Deadline: <br />
+                  21 February 2025
+                </p>
+                <button class="btn btn-primary shadow-none">Completed</button>
+              </div>
+            </div>
+
+            <div class="assign-card bg-[#F4F7FF] p-5 rounded-2xl">
+              <div
+                class="button btn hover:bg-white bg-white border-none rounded-2xl hover:shadow-none font-[poppins] text-sm font-light"
+              >
+                SwiftPay
+              </div>
+              <h2 class="my-4 text-xl font-medium font-[poppins]">
+                Fixed Mobile Button Issue
+              </h2>
+              <p
+                class="bg-white p-5 rounded-2xl text-sm font-normal font-[poppins]"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure .....
+              </p>
+              <hr class="my-5 text-gray-300" />
+              <div class="flex justify-between items-center">
+                <p>
+                  Deadline: <br />
+                  21 February 2025
+                </p>
+                <button class="btn btn-primary shadow-none">Completed</button>
+              </div>
+            </div>
+
+            <div class="assign-card bg-[#F4F7FF] p-5 rounded-2xl">
+              <div
+                class="button btn hover:bg-white bg-white border-none rounded-2xl hover:shadow-none font-[poppins] text-sm font-light"
+              >
+                Meta
+              </div>
+              <h2 class="my-4 text-xl font-medium font-[poppins]">
+                Fixed Mobile Button Issue
+              </h2>
+              <p
+                class="bg-white p-5 rounded-2xl text-sm font-normal font-[poppins]"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure .....
+              </p>
+              <hr class="my-5 text-gray-300" />
+              <div class="flex justify-between items-center">
+                <p>
+                  Deadline: <br />
+                  21 February 2025
+                </p>
+                <button class="btn btn-primary shadow-none">Completed</button>
+              </div>
+            </div>
+
+            <div class="assign-card bg-[#F4F7FF] p-5 rounded-2xl">
+              <div
+                class="button btn hover:bg-white bg-white border-none rounded-2xl hover:shadow-none font-[poppins] text-sm font-light"
+              >
+                Google LLc
+              </div>
+              <h2 class="my-4 text-xl font-medium font-[poppins]">
+                Fixed Mobile Button Issue
+              </h2>
+              <p
+                class="bg-white p-5 rounded-2xl text-sm font-normal font-[poppins]"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure ......
+              </p>
+              <hr class="my-5 text-gray-300" />
+              <div class="flex justify-between items-center">
+                <p>
+                  Deadline: <br />
+                  21 February 2025
+                </p>
+                <button class="btn btn-primary shadow-none">Completed</button>
+              </div>
+            </div>
+
+            <div class="assign-card bg-[#F4F7FF] p-5 rounded-2xl">
+              <div
+                class="button btn hover:bg-white bg-white border-none rounded-2xl hover:shadow-none font-[poppins] text-sm font-light"
+              >
+                GlassDoor
+              </div>
+              <h2 class="my-4 text-xl font-medium font-[poppins]">
+                Fixed Mobile Button Issue
+              </h2>
+              <p
+                class="bg-white p-5 rounded-2xl text-sm font-normal font-[poppins]"
+              >
+                Debug using Chrome DevTools, check for overlapping elements, and
+                ensure ......
+              </p>
+              <hr class="my-5 text-gray-300" />
+              <div class="flex justify-between items-center">
+                <p>
+                  Deadline: <br />
+                  21 February 2025
+                </p>
+                <button class="btn btn-primary shadow-none">Completed</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+      <section class="p-10 bg-white rounded-2xl"></section>
+    </main>
+
+    <footer></footer>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
