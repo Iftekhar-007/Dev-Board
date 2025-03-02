@@ -5,7 +5,6 @@ let title = document.querySelectorAll(".titles");
 // let convertedRemainWork = Number(remainWork);
 
 let date = new Date();
-
 let formatDate =
   date.getFullYear() +
   "/" +
@@ -46,7 +45,10 @@ document.querySelectorAll("#complete-btn").forEach((btn) => {
     document.getElementById("done-number").innerText = doneNumber;
 
     let doneMessage = document.createElement("p");
-    doneMessage.innerText = `You have done the task: ${title.innerText} on ${formatDate}`;
+    doneMessage.innerText = `You have done the task: ${
+      document.querySelectorAll(".titles").innerText
+    } on ${formatDate}`;
+
     let message = document.getElementById("message");
     message.appendChild(doneMessage);
 

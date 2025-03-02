@@ -1,6 +1,6 @@
 document
   .getElementById("clear-btn")
   .addEventListener("click", function (event) {
-    event.preventDefault();
-    message.remove();
+    // event.preventDefault();
+    message.replaceChildren();
   });
