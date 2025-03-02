@@ -45,10 +45,10 @@ document.querySelectorAll("#complete-btn").forEach((btn) => {
     doneNumber = Number(doneNumber) + 1;
     document.getElementById("done-number").innerText = doneNumber;
 
+    let clickedCard = btn.closest(".assign-card");
+    let cardTitle = clickedCard.querySelector(".titles").innerText;
     let doneMessage = document.createElement("p");
-    doneMessage.innerText = `You have done the task: ${
-      document.querySelectorAll(".titles").innerText
-    } on ${formatDate}`;
+    doneMessage.innerText = `You have done the task: ${cardTitle} on ${formatDate}`;
 
     let message = document.getElementById("message");
     message.appendChild(doneMessage);
