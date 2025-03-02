@@ -3,6 +3,8 @@ console.log(numOfRemainWork);
 document.getElementById("remain-work").innerText = numOfRemainWork;
 // let convertedRemainWork = Number(remainWork);
 
+let message = document.getElementById("message");
+
 document.querySelectorAll("#complete-btn").forEach((btn) => {
   btn.addEventListener("click", function (event) {
     event.preventDefault();
@@ -18,5 +20,11 @@ document.querySelectorAll("#complete-btn").forEach((btn) => {
     let doneNumber = document.getElementById("done-number").innerText;
     doneNumber = Number(doneNumber) + 1;
     document.getElementById("done-number").innerText = doneNumber;
+
+    let doneMessage = document.createElement();
+    doneMessage.innerHTML = `
+    <p>you have complete the task ${titles} at today</p>
+    `;
+    message.appendChild(doneMessage);
   });
 });
