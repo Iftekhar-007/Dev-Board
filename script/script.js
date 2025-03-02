@@ -1,7 +1,8 @@
 let numOfRemainWork = document.getElementsByClassName("assign-card").length;
 console.log(numOfRemainWork);
 document.getElementById("remain-work").innerText = numOfRemainWork;
-let title = document.querySelectorAll(".titles");
+let titled = document.querySelectorAll(".titles");
+console.log(titled);
 // let convertedRemainWork = Number(remainWork);
 
 let date = new Date();
