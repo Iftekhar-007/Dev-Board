@@ -57,8 +57,10 @@
             DOM?
           </h1>
           <p class="p-5 text-base font-normal font-[poppins]">
-            There are many ways to select an element in DOM ..Such
-            1.document.getElementById(""),2.document.getElementsByClassName(""),3.document.querySelector(),4.document.querySelectorAll("");
+            There are many ways to select an element in DOM .Such <br />
+            1.document.getElementById(""),
+            2.document.getElementsByClassName(""), 3.document.querySelector(""),
+            4.document.querySelectorAll("");
           </p>
         </div>
         <!-- card2 -->
@@ -70,8 +72,15 @@
             textContent ?
           </h1>
           <p class="p-5 text-base font-normal font-[poppins]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
-            vero atque ex perferendis? Corporis.
+            <span class="font-bold">innerHTML</span>:returns all the elements
+            including html tags like (h1 tag,p tag ") and also the elements
+            between these tags <br />
+            <span class="font-bold">innerText</span> : it's just returns text
+            element within tags .(if there is an element within h1 tag .it will
+            return only the within element and ignore the tagnames). <br />
+            <span class="font-bold">textContent:</span> textContent returns all
+            the text content available in the elements even includes commented(
+            hidden text) content also.
           </p>
         </div>
         <!-- card3 -->
@@ -82,8 +91,9 @@
             Question-3: What is event delegation in the DOM?
           </h1>
           <p class="p-5 text-base font-normal font-[poppins]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
-            vero atque ex perferendis? Corporis.
+            it's a technique to add a evenlistener to a parent element as if
+            it's child element can be triggred easily instead of adding
+            evenlistener in every child element.
           </p>
         </div>
         <!-- card4 -->
@@ -94,8 +104,9 @@
             Question-4: What is event bubbling in the DOM?
           </h1>
           <p class="p-5 text-base font-normal font-[poppins]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
-            vero atque ex perferendis? Corporis.
+            It's a behavior of an element when it's triggred . when it occurs
+            then not only one element is being triggred but also the upwards
+            parent element also be triggered hirarchily .
           </p>
         </div>
         <!-- card5 -->
@@ -107,8 +118,12 @@
             JavaScript?
           </h1>
           <p class="p-5 text-base font-normal font-[poppins]">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
-            vero atque ex perferendis? Corporis.
+            <span class="font-bold">create:</span> document.createElement("p");
+            p.innerText = "Hello I am Hero"; <br />
+            <span class="font-bold">add:</span>
+            parentnode.appendChild("childnode"); <br />
+            <span class="font-bold">remove:</span> parentnode.remove(); or
+            parentnode.replaceChildren(); or parentnode.removeChild();
           </p>
         </div>
       </div>
