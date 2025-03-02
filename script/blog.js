@@ -1,6 +1,6 @@
 document
-  .getElementById("discover-new")
+  .getElementById("back-home")
   .addEventListener("click", function (event) {
     event.preventDefault();
-    window.location.href = "blog.html";
+    window.location.href = "index.html";
   });

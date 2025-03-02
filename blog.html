@@ -4,8 +4,119 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/86ac6ed96e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
-  <body>
-    <h1>hello hello hello!!!!!!!!!!!</h1>
+  <body class="bg-[#F4F7FF]">
+    <header class="pt-6">
+      <section
+        class="w-[1440px] mx-auto shadow p-5 bg-white rounded-2xl flex justify-between items-center"
+      >
+        <div class="logo flex justify-start items-center gap-3">
+          <img src="./assets/logo.png" alt="" />
+          <h1 class="font-[poppins] text-[2.25rem]">
+            Dev<span class="font-bold">Board</span>
+          </h1>
+        </div>
+
+        <div>
+          <button
+            id="back-home"
+            class="btn btn-primary text-lg font-medium font-[poppins]"
+          >
+            Back to Desk
+          </button>
+        </div>
+      </section>
+    </header>
+
+    <main class="w-[1440px] mx-auto pb-10">
+      <h2 class="text-2xl font-bold font-[poppins] text-center py-5">Blogs</h2>
+
+      <div class="query-cards">
+        <div class="card bg-white mb-5">
+          <h1
+            class="border-solid border-b-gray-400 border border-t-0 border-r-0 border-l-0 p-5 text-2xl font-bold font-[poppins]"
+          >
+            Question-1: What are the different ways to select an element in the
+            DOM?
+          </h1>
+          <p class="p-5 text-base font-normal font-[poppins]">
+            There are many ways to select an element in DOM ..Such
+            1.document.getElementById(""),2.document.getElementsByClassName(""),3.document.querySelector(),4.document.querySelectorAll("");
+          </p>
+        </div>
+        <!-- card2 -->
+        <div class="card bg-white mb-5">
+          <h1
+            class="border-solid border-b-gray-400 border border-t-0 border-r-0 border-l-0 p-5 text-2xl font-bold font-[poppins]"
+          >
+            Question-2: What is the difference between innerHTML, innerText, and
+            textContent ?
+          </h1>
+          <p class="p-5 text-base font-normal font-[poppins]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
+            vero atque ex perferendis? Corporis.
+          </p>
+        </div>
+        <!-- card3 -->
+        <div class="card bg-white mb-5">
+          <h1
+            class="border-solid border-b-gray-400 border border-t-0 border-r-0 border-l-0 p-5 text-2xl font-bold font-[poppins]"
+          >
+            Question-3: What is event delegation in the DOM?
+          </h1>
+          <p class="p-5 text-base font-normal font-[poppins]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
+            vero atque ex perferendis? Corporis.
+          </p>
+        </div>
+        <!-- card4 -->
+        <div class="card bg-white mb-5">
+          <h1
+            class="border-solid border-b-gray-400 border border-t-0 border-r-0 border-l-0 p-5 text-2xl font-bold font-[poppins]"
+          >
+            Question-4: What is event bubbling in the DOM?
+          </h1>
+          <p class="p-5 text-base font-normal font-[poppins]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
+            vero atque ex perferendis? Corporis.
+          </p>
+        </div>
+        <!-- card5 -->
+        <div class="card bg-white mb-5">
+          <h1
+            class="border-solid border-b-gray-400 border border-t-0 border-r-0 border-l-0 p-5 text-2xl font-bold font-[poppins]"
+          >
+            Question-5: How do you create, add, and remove elements using
+            JavaScript?
+          </h1>
+          <p class="p-5 text-base font-normal font-[poppins]">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere in
+            vero atque ex perferendis? Corporis.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script/script.js"></script>
+    <script src="./script/clear.js"></script>
+    <script src="./script/theme.js"></script>
+    <script src="./script/blog.js"></script>
   </body>
 </html>

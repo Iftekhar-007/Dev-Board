@@ -1,9 +1,16 @@
 let numOfRemainWork = document.getElementsByClassName("assign-card").length;
 console.log(numOfRemainWork);
 document.getElementById("remain-work").innerText = numOfRemainWork;
-let titled = document.querySelectorAll(".titles");
-console.log(titled);
+// let titled = document.querySelectorAll(".titles");
+// console.log(titled);
 // let convertedRemainWork = Number(remainWork);
+
+document
+  .getElementById("discover-new")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    window.location.href = "blog.html";
+  });
 
 let date = new Date();
 let formatDate =
