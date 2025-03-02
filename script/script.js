@@ -2,6 +2,7 @@ let numOfRemainWork = document.getElementsByClassName("assign-card").length;
 console.log(numOfRemainWork);
 document.getElementById("remain-work").innerText = numOfRemainWork;
 // let convertedRemainWork = Number(remainWork);
+let titles = document.getElementsByClassName("titles").event;
 
 let message = document.getElementById("message");
 
@@ -21,10 +22,8 @@ document.querySelectorAll("#complete-btn").forEach((btn) => {
     doneNumber = Number(doneNumber) + 1;
     document.getElementById("done-number").innerText = doneNumber;
 
-    let doneMessage = document.createElement();
-    doneMessage.innerHTML = `
-    <p>you have complete the task ${titles} at today</p>
-    `;
+    let doneMessage = document.createElement("p");
+    doneMessage.innerText = `you have complete the task ${titles} at today`;
     message.appendChild(doneMessage);
   });
 });
