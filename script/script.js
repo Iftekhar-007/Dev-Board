@@ -2,7 +2,7 @@ let numOfRemainWork = document.getElementsByClassName("assign-card").length;
 console.log(numOfRemainWork);
 document.getElementById("remain-work").innerText = numOfRemainWork;
 // let convertedRemainWork = Number(remainWork);
-let titles = document.getElementsByClassName("titles").event;
+let titles = document.getElementsByClassName("titles").innerText;
 
 let message = document.getElementById("message");
 
