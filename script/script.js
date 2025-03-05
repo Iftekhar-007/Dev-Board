@@ -44,6 +44,10 @@ document.querySelectorAll("#complete-btn").forEach((btn) => {
       document.getElementById("remain-work").innerText = numOfRemainWork;
     }
 
+    if (numOfRemainWork === 0) {
+      alert("All updated successfully");
+    }
+
     let doneNumber = document.getElementById("done-number").innerText;
     doneNumber = Number(doneNumber) + 1;
     document.getElementById("done-number").innerText = doneNumber;
