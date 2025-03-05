@@ -24,15 +24,11 @@ let formatDate =
   " " +
   date.getHours() +
   " " +
-  "hours" +
   ":" +
   date.getMinutes() +
   " " +
-  "minutes" +
   ":" +
-  date.getSeconds() +
-  " " +
-  "seconds";
+  date.getSeconds();
 
 let message = document.getElementById("message");
 
